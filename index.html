@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>СИСТЕМА КОММЕНТИРОВАНИЯ НА JS + TYPESCRIPT</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            
+        </header>
+        <section class="main">
+            <div class="left_block">
+
+            </div>
+            <div class="centr_block">
+                <div class="top_blocks">
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="mini_block">
+                        
+                    </div>
+                    <div class="big_block">
+                        
+                    </div>
+                </div>
+                <div class="comments">
+                    <nav class="sorting">
+                        <a href="" class="all_comments">
+                            <span class="amount">Комментарии</span> <span class="comments_amount"></span>
+                           
+                        </a>
+                        <a href="" class="sorting_dropdown">
+                             <span class="dropdown">По количеству оценок</span>
+                        </a>
+                       <a href="" class="all_fav">
+                            <span class="favorites">
+                                <span class="favorites_text">Избранное</span> 
+                                <img src="/PJ-03/img/heart.svg" class="heart" alt="heart">
+                            </span>
+                       </a>
+                      
+                        
+                    </nav>
+                    
+                    <div class="new_comment">
+                        <form>
+                            <div class="form-group photo">
+                            
+                            </div>
+                            <div class="form-group">
+                                <div class="form_text">
+                                    
+                                </div>
+                                <div class="max_symbols" id="max" >Макс. 1000 символов</div>
+                                
+                                <textarea name="comment-body" type="text" class="form-control" id="comment-body" oninput="countLetters();" placeholder="Введите текст сообщения..." ></textarea>
+                            </div>
+                            <div class="form-check text-right">
+                                <div class="error_max_symbols" id="error_max"></div>
+                                    <button type="submit" id="comment-add" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <section class="all_comments">
+                        <div class="old_comment" id="comment_old">
+                        </div>             
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

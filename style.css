@@ -1,0 +1,427 @@
+body {
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.wrapper {
+ width: 100%;
+}
+.header {
+    height: 101px;
+    width: 100%;
+    padding: 0;
+    background-color: #D9D9D9;
+   
+}
+.main {
+    margin-top: 40px;
+    display: flex;
+}
+.left_block {
+    background-color: #D9D9D9;
+    min-height: 1032px;
+    width: 203px;
+    display: flex;
+    margin-right: 86px;
+}
+.centr_block {
+    display: flex;
+    flex-direction: column;
+    max-width: 1022px;
+}
+.top_blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.mini_block {
+    display: flex;
+    min-width: 487px;
+    min-height: 61px;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+    
+}
+.mini_block:nth-child(2n+1){
+    margin-right: 48px;
+}
+.big_block {
+    min-width: 1022px;
+    min-height: 168px; 
+    display: flex;
+    background-color: #D9D9D9;
+    margin-top: 30px;
+}
+
+/* _____________________________________блок комментариев______________________________________ */
+.comments {
+    margin-top: 40px;
+    border-top:  solid 3px #D9D9D9;
+    
+}
+.sorting {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    
+
+}
+.all_comments{
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom:  3px solid #000000;
+}
+.amount {
+    
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+   
+    color: #000000;
+
+
+}
+.comments_amount{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+
+    opacity: 0.4;
+}
+.dropdown {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+
+    color: #000000;
+
+    opacity: 0.4;
+    margin-right: 50px;
+    margin-left: 55px;
+}
+.favorites {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    align-items: flex-end;
+    color: #000000;
+
+    opacity: 0.4;
+   
+}
+.heart{
+    margin-left: 9px;
+}
+
+/* ______________________________________________новый комментарий_________________________ */
+.new_comment {
+    display: flex;
+}
+form {
+    display: flex;
+}
+.form-group {
+   
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.photo {
+    margin: 0;
+}
+.photo_avatar{
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+}
+.all_name{
+    display: flex;
+    align-items: center;
+}
+.name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #122AC0;
+}
+
+.form-control {
+    
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border-style: none;
+    width: 638px;
+    min-height: 21px;
+
+    padding: 20px 19px 20px 30px;
+    margin-top: 15px;
+    border-style: none;
+
+}
+.max_symbols {
+    
+    margin: 0;
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 20px;
+    color: #000000;
+
+    opacity: 0.4;
+    text-align: end;
+    margin-top: -20px;
+
+}
+.form_text{ 
+    display: flex;
+    justify-content: space-between;
+
+}
+textarea {
+    border-style: none;
+    max-height: 216px;
+    resize: none;
+    outline: none;
+   
+    
+}
+textarea:focus {
+    outline: none; 
+    height: 216px;
+    
+   
+}
+
+textarea::placeholder{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.4;
+    
+}
+
+.form-check {
+}
+.text-right {
+}
+.error_max_symbols{
+    line-height: 17px;
+    text-align: right;
+
+    color: #FF0000;
+    
+}
+.btn {
+    width: 213px;
+    height: 61px;
+    background: #A2A2A2;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 37px;
+    border-style: none;
+    margin-left: 30px;
+}
+.btn.active {
+    background: #ABD873;
+    opacity: 1;
+    color: #000;
+    
+
+}
+.btn-primary {
+}
+
+/* ________________________________________________блок всех комментариев___________________ */
+
+.old_comment.active {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#comment-field{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.user_info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    align-items: start;
+}
+.time-comment{
+    display: flex;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    opacity: 0.4;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+
+}
+.name_user{
+    display: flex;
+}
+.text-comment{
+    max-width: 916px;
+    min-width: 825px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+    margin-top: 10px;
+    
+}
+
+/* __________________________________действия пользователя __________________________________*/
+
+.user_actions {
+   
+    border: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-left: 103px;
+    margin-bottom: 22px;
+}
+.answer:before { 
+    content: url(/PJ-03/img/answer.svg);
+   
+    margin-right: 10px; 
+    }
+.answer {
+    display: flex;
+    background-color: #FFFFFF;
+    border: none;
+    /* width: 117px; */
+   
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    align-items: center;
+
+}
+.answer_arrow {
+
+}
+.user_answer {
+    margin-left: 8px;
+    margin-top: 1px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+    opacity: 0.4;
+}
+.user_fav {
+    
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    display: flex;
+    opacity: 0.4;
+    width: 147px;
+    padding: 0;
+    margin-left: 18px;
+}
+.user_fav_not{
+    display: flex;
+    align-items: flex-end;
+    
+}
+.fav_arrow{
+    margin-right: 3px;
+}
+.user_fav_in{
+    display: none;
+    align-items: flex-end;
+}
+.rating {
+    display: flex;
+    align-items: center;
+
+   
+}
+.minus {
+    padding: 0;
+    border: none;
+    background-color: #FFFFFF;
+
+}
+.pluse{
+    padding: 0;
+    background-color: #FFFFFF;
+    border: none;
+}
+.com_rating {
+    font-weight: 500;
+    color: #8AC540;
+   
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* _________________________________________блок ответов______________________________ */
+
+.answer_comment{
+    
+    margin-left: 100px;
+}
+.answer_comment_info{
+    display: flex;
+}
+.user_info{
+    display: flex;
+}
+.answer_for:before { 
+    content: url(/PJ-03/img/answer.svg);
+   
+    margin-right: 10px; 
+    }
+.answer_for{
+    display: flex;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 0;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.4);
+
+}
+.not_answer{
+    background-color: #FFFFFF;
+    border-style: none;
+    width: 20px;
+    height: 20px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 23px;
+    cursor: pointer;
+}
+#answer_to{
+    display: flex;
+}
+.user_actions_answer{
+    margin-left: 70px;
+    margin-bottom: 22px;
+}
