@@ -24,22 +24,22 @@
                     <div class="mini_block">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
-                    <div class="mini_block">
+                    <div class="mini_block mini_block_dt">
                         
                     </div>
                     <div class="big_block">
@@ -52,15 +52,26 @@
                             <span class="amount">Комментарии</span> <span class="comments_amount"></span>
                            
                         </a>
-                        <a href="" class="sorting_dropdown">
-                             <span class="dropdown">По количеству оценок</span>
-                        </a>
-                       <a href="" class="all_fav">
-                            <span class="favorites">
-                                <span class="favorites_text">Избранное</span> 
-                                <img src="/PJ-03/img/heart.svg" class="heart" alt="heart">
-                            </span>
-                       </a>
+                        <div class="sort_fav">
+                            <!-- Изначально не активна ни одна опция -->
+                            <div class="itc-select" id="select-1">
+                                <!-- Кнопка для открытия выпадающего списка -->
+                                <button type="button" class="itc-select__toggle" name="sort" value="actual" data-select="toggle" data-index="1">Выберите из списка</button>
+                                <!-- Выпадающий список -->
+                                <div class="itc-select__dropdown">
+                                <ul class="itc-select__options">
+                                    <li class="itc-select__option select__option_selected" data-select="option" data-value="actual" data-index="1">По актуальности</li>
+                                    <li class="itc-select__option" data-select="option" data-value="grade" data-index="1">По количеству оценок</li>
+                                    <li class="itc-select__option" data-select="option" data-value="date" data-index="2">По дате</li>
+                                    <li class="itc-select__option" data-select="option" data-value="answer" data-index="3">По количеству ответов</li>
+                                </ul>
+                                </div>
+                            </div>
+                            <button  class="all_fav">
+                            Избранное       
+                            </button>
+                        </div>
+                      
                       
                         
                     </nav>
